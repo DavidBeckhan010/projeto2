@@ -18,7 +18,7 @@ st.set_page_config(
 )
 
 
-# Função para converter imagem em base64 (no rodapé fixo) 
+# Função para converter imagem em base64  
 def image_file_to_base64(path: str) -> str | None:
     try:
         with open(path, "rb") as f:
@@ -223,7 +223,7 @@ if logo_b64:
         unsafe_allow_html=True
     )
 else:
-    # fallback simples (sem imagem)
+    # fallback simples 
     footer_col1, footer_col2 = st.columns([1, 8])
     with footer_col1:
         st.write("")  # espaço
